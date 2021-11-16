@@ -1,0 +1,13 @@
+<!-- [mensagem] e [alerta] são imputs - propriedades que vieram de outro componente (secundario.component.ts)-->
+<div class="content">
+    <h3> @Input </h3>
+    <app-secundario [mensagem] = "outroTexto" [alerta] = "texto" ></app-secundario>
+</div>
+
+<!-- [alerta] poderia ser outraMensagem sem apelido, mas a boa prática é colocar apelido -->
+<br/>
+<div>
+
+    <app-output (anunciador) = "exibirDados($event)"></app-output> <!-- ($event) indica o evento disparado do componente filho como argumento -->
+
+</div>

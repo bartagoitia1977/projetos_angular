@@ -1,0 +1,21 @@
+<div class="content">
+    <h2>Service</h2>
+    <button (click) = "obterConteudo()">Obter Conteúdo</button>
+    <br/>
+    <table class="bordaTabela">
+        <thead>
+            <tr>
+                <th>Identificação do Produto</th>
+                <th>Nome do Produto</th>
+                <th>Preço do Produto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let p of produto">
+                <td>{{ p.idProduto }}</td>
+                <td>{{ p.nomeProduto }}</td>
+                <td>{{ p.precoProduto }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
